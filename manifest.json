@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Random Tab Closer",
+  "version": "1.0",
+  "description": "Closes a random tab every 5 minutes if there are more than 5 open tabs.",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
