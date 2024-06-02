@@ -1,10 +1,19 @@
 {
-  "manifest_version": 3,
-  "name": "Random Tab Closer",
-  "version": "1.0",
-  "description": "Closes a random tab every 5 minutes if there are more than 5 open tabs.",
-  "permissions": ["tabs"],
-  "background": {
-    "service_worker": "background.js"
+    "manifest_version": 3,
+    "name": "Chrome Inactive Tab Closer Extension",
+    "description": "To force keep you organized, this extension will close inactive tabs and notify you daily.",
+    "version": "1.0",
+    "permissions": [
+      "tabs",
+      "storage",
+      "notifications",
+      "alarms"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "48": "icon.png"
+    }
   }
-}
+  
